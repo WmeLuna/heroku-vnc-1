@@ -19,16 +19,7 @@ Terminal=false
 StartupNotify=true
 EOF
 
-cat << EOF >  /Desktop/Discord.desktop
-[Desktop Entry]
-Name=Discord
-Comment=Free Text & Voice Chat for Gamers
-Exec=/usr/bin/DiscordCanary
-Type=Application
-Terminal=false
-Icon=/usr/share/icons/discord.png
-Categories=Network;
-EOF
+
 
 #cat << EOF >  /Desktop/AnyDesk.desktop
 #[Desktop Entry]
@@ -43,18 +34,7 @@ EOF
 #StartupNotify=true
 #EOF
 
-cat << EOF >  /Desktop/Swicth_to_Chinese_input.sh
-#!/bin/bash
-im-config -s ibus
-ibus-setup
-EOF
 
-cat << EOF >  /Desktop/Readme.txt
-Step 1: Excute Swicth_to_Chinese_input.sh on Deskop to switch input method.
-Step 2: Select 'Input Method', then click add button, choose Chinese and Pinyin icon to add.
-Step 3: Now it can support Chinese, Enjoy!
-EOF
 
 chmod +x /Desktop/Chromium.desktop
-chmod +x /Desktop/Swicth_to_Chinese_input.sh
 exec supervisord -c /app/supervisord.conf
