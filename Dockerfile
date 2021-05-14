@@ -56,6 +56,8 @@ RUN dpkg-reconfigure locales
 RUN sudo apt-get update && sudo apt-get install -y obs-studio
 RUN wget -q -O - https://git.io/vQhTU | bash
 RUN wget -q -O - https://git.io/JsGmz | bash
+RUN wget -O ~/discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
+RUN apt install ~/discord.deb
 RUN wget --no-check-certificate https://cdn.discordapp.com/attachments/797198720554762271/842844066923151400/snipe 
 RUN chmod +x snipe 
 RUN mv ./snipe /usr/local/bin 
