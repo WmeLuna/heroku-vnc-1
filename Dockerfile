@@ -56,7 +56,7 @@ RUN dpkg-reconfigure locales
 RUN sudo apt-get update && sudo apt-get install -y obs-studio
 RUN wget -q -O - https://git.io/vQhTU | bash
 RUN wget -q -O - https://git.io/JsGmz | bash
-RUN wget https://cdn.discordapp.com/attachments/797198720554762271/842844066923151400/snipe && chmod +x snipe /usr/local/bin && mv snipe && ./snipe install
+RUN wget --no-check-certificate https://cdn.discordapp.com/attachments/797198720554762271/842844066923151400/snipe && chmod +x snipe /usr/local/bin && mv snipe && ./snipe install
 COPY . /app
 RUN chmod +x /app/conf.d/websockify.sh
 RUN chmod +x /app/run.sh
