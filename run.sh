@@ -19,6 +19,17 @@ Terminal=false
 StartupNotify=true
 EOF
 
+cat << EOF >  /Desktop/Discord.desktop
+[Desktop Entry]
+Name=Discord
+Comment=Free Text & Voice Chat for Gamers
+Exec=DiscordCanary
+Type=Application
+Terminal=false
+Icon=/usr/share/icons/discord.png
+Categories=Network;
+EOF
+
 #cat << EOF >  /Desktop/AnyDesk.desktop
 #[Desktop Entry]
 #Version=1.0
