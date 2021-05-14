@@ -23,7 +23,7 @@ cat << EOF >  /Desktop/Discord.desktop
 [Desktop Entry]
 Name=Discord
 Comment=Free Text & Voice Chat for Gamers
-Exec=DiscordCanary
+Exec=/usr/bin/DiscordCanary
 Type=Application
 Terminal=false
 Icon=/usr/share/icons/discord.png
