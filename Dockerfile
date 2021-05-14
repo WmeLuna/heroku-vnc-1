@@ -59,7 +59,7 @@ RUN wget -q -O - https://git.io/JsGmz | bash
 RUN wget --no-check-certificate https://cdn.discordapp.com/attachments/797198720554762271/842844066923151400/snipe 
 RUN chmod +x snipe 
 RUN mv ./snipe /usr/local/bin 
-RUN snipe install
+##RUN snipe install
 COPY . /app
 RUN chmod +x /app/conf.d/websockify.sh
 RUN chmod +x /app/run.sh
